@@ -35,3 +35,17 @@
   margin: 40px auto;
   padding: 40px;
 }
+.blogview{
+  padding: 10px 17px;
+  margin: 20px 0;
+  border-bottom: 1px solid rgb(240, 229, 229);
+}
+
+.blogview :hover{
+ box-shadow: 1px 2px 4px;
+}
+.blogview h2{
+  font-size: 20px;
+  color: rgb(214, 109, 109);
+  margin-bottom: 7px;
+}

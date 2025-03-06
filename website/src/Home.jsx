@@ -1,23 +1,23 @@
 import {useState } from 'react';
 
 const HomePage = () => {
-    const [name, setName ] = useState('frank')
-    const [age, setAge ] = useState(20)
-
-
-  const handleClick = () => {
-     setName('lolo')
-      setAge(10)
-    }
-
-   
-
+    const [blogs, setBlogs] = useState([
+        {title: 'my new website', body: 'this site belongs to frank', author:'Ode', id: 1},
+        {title: 'my new website', body: 'this site belongs to frank', author:'frank', id: 2},
+        {title: 'my new website', body: 'this site belongs to frank', author:'shalom', id: 3},
+        {title: 'my new website', body: 'this site belongs to frank', author:'frank', id: 4},
+        {title: 'my new website', body: 'this site belongs to frank', author:'Ode', id: 5},
+    ]);
+ 
   return (
     <div className='HomePage'>
-      <h1>HomePage</h1>
-      <h2>{name} is {age} years old and counting</h2>
-      <button onClick={handleClick}>click me</button>
-      
+     {blogs.map((blog) => (
+         <div className="blogview" key={blog.id}>
+            <h2>{blog.title}</h2>
+            <p>written by {blog.author}</p>
+
+         </div>
+     )) }
     </div>
   )
 }
