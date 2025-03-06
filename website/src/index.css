@@ -1,0 +1,37 @@
+
+*{
+  margin: 0;
+  font-family: "Quicksand";
+  color: cadetblue;
+}
+.narvbar{
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  border-bottom: 1px solid gray;
+}
+.narvbar h1{
+  color: hsl(0, 83%, 66%);
+}
+
+.narvbar link{
+ margin-left: auto;
+}
+
+.narvbar a:hover{
+  color: rgb(218, 148, 69);
+}
+
+.narvbar a{
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 7px;
+}
+
+.content {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 40px;
+}
