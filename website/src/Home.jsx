@@ -9,13 +9,16 @@ const HomePage = () => {
         {title: 'my new website', body: 'this site belongs to frank', author:'frank', id: 4},
         {title: 'my new website', body: 'this site belongs to frank', author:'Ode', id: 5},
     ]);
+
+    const handleDelete = (id) => {
+      const newBlogs = blogs.filter(blog => blog.id  !== id)
+
+      setBlogs(newBlogs);
+    }
  
   return (
     <div className='HomePage'>
-     <BlogList blogs={blogs} title="All blogs!!"/>
-     
-     <BlogList blogs={blogs.filter((blogs) =>blogs.author ==="Ode")} title="ode blogs!"/>
-
+     <BlogList blogs={blogs} title="All blogs!!" handleDelete={handleDelete}/>
     </div>
   )
 }
