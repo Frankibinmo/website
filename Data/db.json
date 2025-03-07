@@ -1,0 +1,16 @@
+{
+    "blogs":[
+        {
+            "title": "my first blog",
+            "body": "why do we use it?/nit is a long established fact that a render will be distracted",
+            "author": "frank",
+            "id": 1
+        },
+        {
+            "title": "openig party",
+            "body": "why do we use it?/nit is a long established fact that a render will be distracted",
+            "author": "ibinmo",
+            "id": 2
+        }
+    ]
+}
