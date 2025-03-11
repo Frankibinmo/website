@@ -1,19 +1,17 @@
-import React from 'react'
-import Narvbar from './Narvbar'
-import HomePage from './Home'
-
+import Narvbar from "./Narvbar";
+import Home from './Home'
 
 
 const App = () => {
 
   return (
     <div className="App">
-      <Narvbar />
-      <div className="component">
-      <HomePage />
+      <Narvbar/>
+      <div className="content">
+        <Home/>
+      </div>
     </div>
-    </div>
-  )
+  );
 }
 
 export default App
