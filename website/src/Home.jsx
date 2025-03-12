@@ -1,29 +1,10 @@
 import { useEffect, useState } from "react"
 import BlogList from "./BlogList";
+import useFetch from "./useFetch";
+
 const Home = () => {
      
-    const [blogs, setBlogs] = useState(null)
-
-    const [isloading, setIsLoading] = useState(true)
-
-
-     const[name, setName] = useState('glory')
-
-      useEffect(() => {
-        setTimeout(() => {
-          fetch("http://localhost:8000/blogs")
-            .then((res) => res.json()) // Ensure the response is parsed as JSON
-            .then((data) => {
-              setBlogs(data);
-              setIsLoading(false);
-              // You can handle the data here
-            });
-        }, 3000);
-        //  .catch((error) => {
-        //    console.error("Error fetching data:", error); // Optional: Handle errors
-        //  });
-      }, []);
-
+   const { data:blogs, isloading, error } = useFetch("http://localhost:8000/blogs");
 
   return (
     <div className="Home">
