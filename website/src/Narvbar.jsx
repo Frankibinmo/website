@@ -1,12 +1,11 @@
-import React from 'react'
-
+import { Link } from "react-router-dom"
 const Narvbar = () => {
   return (
     <div className='narvbar'>
       <h1>Franks blog</h1>
       <div className="links">
-        <a href="">Home</a>
-        <a href="">New blog</a>
+        <Link to="/">Home</Link>
+        <Link to="/create">New blog</Link>
 
       </div>
     </div>
