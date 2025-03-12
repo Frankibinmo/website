@@ -24,6 +24,10 @@ const useFetch = (url) => {
               setError(err.message);
             });
         }, 100);
+
+        return () => console.log('clean up')
+
+        
       }, [url]);
 
       return {data, isloading, error}
